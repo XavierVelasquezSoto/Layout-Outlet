@@ -26,5 +26,6 @@ export const GlobalStyles = createGlobalStyle`
     body{
         background-color:#333;
         color: aliceblue;
+        font-family: "Barlow Condensed", serif;
     }
 `;
