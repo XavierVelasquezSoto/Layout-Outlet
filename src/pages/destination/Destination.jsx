@@ -29,9 +29,23 @@ const Destination = () => {
 				{webContent.introduction}
 			</StyledTitleIntro>
 			<StyledContainer>
-				<StyledImgActive
-					src={webContent.images.mobile[active]}
-				></StyledImgActive>
+				<picture>
+					<source
+						media='(min-width:360px )'
+						srcset={webContent.images.mobile[active]}
+					/>
+					<source
+						media='(min-width:768px )'
+						srcset={webContent.images.tablet[active]}
+					/>
+					<source
+						media='(min-width: 1024px)'
+						srcset={webContent.images.desktop[active]}
+					/>
+					<StyledImgActive
+						src={webContent.images.mobile[active]}
+					></StyledImgActive>
+				</picture>
 				<StyledDivContainerInfo>
 					<StyledDivButton>
 						<StyledButton $active={active === 0} onClick={() => setActive(0)}>

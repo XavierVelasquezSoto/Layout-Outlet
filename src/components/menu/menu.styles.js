@@ -15,7 +15,7 @@ const StyledLink = styled(NavLink)`
 
 		&.active {
 			border-bottom: 4px solid ${COLORS.white};
-			padding-bottom: 35px;
+			/* padding-bottom: 35px; */
 		}
 	}
 `;
@@ -54,11 +54,11 @@ const StyledUl = styled.ul`
 		margin: 0;
 		left: 128px;
 		top: 0;
-		/* background-color: rgb(0, 0, 0, 0.3); */
-		background-color: #333;
-		/* backdrop-filter: blur(50px); */
+		background-color: #292b37;
+		backdrop-filter: blur(10px);
 		padding-left: 117px;
-		padding-top: 38px;
+		/* padding-top: 38px; */
+		align-items: center;
 		min-width: 640px;
 		width: 100vw;
 		height: 96px;
@@ -71,8 +71,8 @@ const StyledUl = styled.ul`
 		margin-top: 40px;
 		padding-left: 156px;
 		padding-top: 38px;
-		background-color: rgb(11, 13, 23, 0.15);
-		backdrop-filter: blur(10px);
+		/* background-color: rgb(11, 13, 23, 0.15);
+		backdrop-filter: blur(10px); */
 	}
 `;
 
@@ -85,7 +85,8 @@ const StyledSpanLink = styled.span`
 	margin-right: 12px;
 	font-weight: ${FONTS.fontWeightBold};
 	@media screen and (width >= 768px) {
-		display: ${props => (props.$number === '00' ? 'none' : 'inline')};
+		/* display: ${props => (props.$number === '00' ? 'none' : 'inline')}; */
+		display: inline;
 	}
 	@media screen and (width >= 1440px) {
 		display: flex;

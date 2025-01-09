@@ -4,7 +4,8 @@ const StyledBackgroundImg = styled.div`
 	background-image: url(${props => props.$webImg.mobile});
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	/* height: 100vh; */
+	min-height: 100vh;
 	@media screen and (width>= 768px) {
 		background-image: url(${props => props.$webImg.tablet});
 		min-height: 100vh;

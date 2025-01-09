@@ -4,12 +4,16 @@ import { FONTS } from '../../constant/fonts';
 import { NavLink } from 'react-router-dom';
 
 const StyledContainer = styled.div`
-	height: 100vh;
+	/* height: 100vh; */
 	min-height: 100vh;
 
 	@media screen and (width >= 1440px) {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-inline: 165px;
+		gap: 108px;
 	}
 `;
 
@@ -42,7 +46,9 @@ const StyledImgActive = styled.img`
 	}
 
 	@media screen and (width >= 1440px) {
-		padding: 151px 29px 175px 194px;
+		/* padding: 151px 29px 175px 194px; */
+		padding: 0;
+		width: 480px;
 	}
 `;
 
@@ -56,8 +62,11 @@ const StyledDivButton = styled.ul`
 `;
 
 const StyledDivContainerInfo = styled.div`
-	@media screen and (width>=1440px) {
+	/* @media screen and (width>=1440px) {
 		padding: 277px 212px 181px 47px;
+	} */
+	@media screen and (width>=1440px) {
+		width: 50%;
 	}
 `;
 
