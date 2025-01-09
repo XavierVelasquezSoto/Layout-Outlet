@@ -9,6 +9,10 @@ const StyledHeader = styled.header`
 	@media screen and (width>=768px) {
 		height: 96px;
 	}
+	/* 	
+	@media screen and (width>=1440px) {
+		overflow: hidden;
+	} */
 `;
 
 const StyledLogo = styled.img`

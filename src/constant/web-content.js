@@ -69,13 +69,22 @@ const CREW = {
 	},
 	images: {
 		mobile: {
-			1: '/assets/destination/image-moon.png'
+			0: '/assets/crew/image-douglas-hurley.png',
+			1: '/assets/crew/image-mark-shuttleworth.png',
+			2: '/assets/crew/image-victor-glover.png',
+			3: '/assets/crew/image-anousheh-ansari.png'
 		},
 		tablet: {
-			1: '/assets/destination/image-moon.png'
+			0: '/assets/crew/image-douglas-hurley.png',
+			1: '/assets/crew/image-mark-shuttleworth.png',
+			2: '/assets/crew/image-victor-glover.png',
+			3: '/assets/crew/image-anousheh-ansari.png'
 		},
 		desktop: {
-			1: '/assets/destination/image-moon.webp'
+			0: '/assets/crew/image-douglas-hurley.webp',
+			1: '/assets/crew/image-mark-shuttleworth.webp',
+			2: '/assets/crew/image-victor-glover.webp',
+			3: '/assets/crew/image-anousheh-ansari.webp'
 		}
 	}
 };
