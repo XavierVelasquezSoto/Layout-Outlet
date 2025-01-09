@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import {
-	StyledContainer,
 	StyledIcon,
 	StyledLi,
 	StyledLink,
@@ -13,7 +12,7 @@ const Menu = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<StyledContainer $showMenu={isOpen}>
+		<>
 			{!isOpen && (
 				<StyledIcon
 					src='/assets/shared/icon-hamburger.svg'
@@ -35,8 +34,14 @@ const Menu = () => {
 					{MENU_INFO.map(infoLink => {
 						return (
 							<StyledLi key={infoLink.id}>
-								<StyledLink to={infoLink.link}>
-									<StyledSpanLink>{infoLink.numberLink}</StyledSpanLink>
+								<StyledLink
+									to={infoLink.link}
+									$number={infoLink.numberLink}
+									// $isOpen={isOpen}
+								>
+									<StyledSpanLink $number={infoLink.numberLink}>
+										{infoLink.numberLink}
+									</StyledSpanLink>
 									{infoLink.menuLink}
 								</StyledLink>
 							</StyledLi>
@@ -44,8 +49,11 @@ const Menu = () => {
 					})}
 				</StyledUl>
 			</nav>
-		</StyledContainer>
+		</>
 	);
 };
 
 export default Menu;
+{
+	/* <StyledContainer $showMenu={isOpen}></StyledContainer>; */
+}

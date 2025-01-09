@@ -1,9 +1,3 @@
-const HOMEPAGE = {
-	introduction: 'SO, YOU WANT TO TRAVEL TO',
-	title: 'SPACE',
-	info: 'Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!',
-	joinHome: 'EXPLORE'
-};
 const DESTINATION = {
 	introduction: 'PICK YOUR DESTINATION',
 	title: {
@@ -31,6 +25,26 @@ const DESTINATION = {
 		1: '9 months',
 		2: '3 years',
 		3: '7 years'
+	},
+	images: {
+		mobile: {
+			0: '/assets/destination/image-moon.png',
+			1: '/assets/destination/image-mars.png',
+			2: '/assets/destination/image-europa.png',
+			3: '/assets/destination/image-titan.png'
+		},
+		tablet: {
+			0: '/assets/destination/image-moon.png',
+			1: '/assets/destination/image-moon.png',
+			2: '/assets/destination/image-moon.png',
+			3: '/assets/destination/image-moon.png'
+		},
+		desktop: {
+			0: '/assets/destination/image-moon.webp',
+			1: '/assets/destination/image-moon.webp',
+			2: '/assets/destination/image-moon.webp',
+			3: '/assets/destination/image-moon.webp'
+		}
 	}
 };
 const CREW = {
@@ -52,6 +66,17 @@ const CREW = {
 		1: 'Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.',
 		2: 'Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. ',
 		3: 'Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. '
+	},
+	images: {
+		mobile: {
+			1: '/assets/destination/image-moon.png'
+		},
+		tablet: {
+			1: '/assets/destination/image-moon.png'
+		},
+		desktop: {
+			1: '/assets/destination/image-moon.webp'
+		}
 	}
 };
 const TECHNOLOGY = {
@@ -70,11 +95,21 @@ const TECHNOLOGY = {
 		0: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad! ",
 		1: 'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.',
 		2: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
+	},
+	images: {
+		mobile: {
+			2: '/assets/destination/image-moon.png'
+		},
+		tablet: {
+			2: '/assets/destination/image-moon.png'
+		},
+		desktop: {
+			2: '/assets/destination/image-moon.webp'
+		}
 	}
 };
 
 export const SPACE_INFO = {
-	homepage: HOMEPAGE,
 	destination: DESTINATION,
 	crew: CREW,
 	technology: TECHNOLOGY

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import './normalize.css';
+import { FONTS } from '../constant/fonts';
 export const GlobalStyles = createGlobalStyle`
     *,
     *::after,
@@ -25,7 +26,8 @@ export const GlobalStyles = createGlobalStyle`
     }
     body{
         background-color:#333;
-        color: aliceblue;
+        color: #D0D6F9;
         font-family: "Barlow Condensed", serif;
+        
     }
 `;

@@ -1,20 +1,12 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const StyledButton = styled.button`
-	background-color: ${({ color }) => color};
-	color: white;
-	border: none;
-	padding: 0.5rem;
+// const StyledUl = styled.ul``;
 
-	@media screen and (width>768px) {
-		display: block;
-	}
+// const StyledLi = styled.li`
+// 	&:active {
+// 		color: red;
+// 		border-bottom: 4px solid red;
+// 	}
+// `;
 
-	@media (hover: hover) {
-		&:hover {
-			scale: 0.8;
-		}
-	}
-`;
-
-export { StyledButton };
+// export { StyledUl, StyledLi };
