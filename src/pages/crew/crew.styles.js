@@ -26,7 +26,19 @@ const StyledTitle = styled.span`
 	padding-right: 24px;
 	opacity: 0.5;
 `;
-// const StyledCrew = styled.div``
+const StyledCrewContainer = styled.div`
+	@media screen and (width>= 1440px) {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding-top: 64px;
+		padding-bottom: 77px;
+		padding-inline: 164px;
+		gap: 32px;
+	}
+`;
 // const StyledCrew = styled.div``
 
 const StyledTitleJob = styled.h2`
@@ -45,6 +57,7 @@ const StyledTitleJob = styled.h2`
 		margin: 0;
 		text-align: left;
 		font-size: ${FONTS.fontSize3XL};
+		padding-top: 197px;
 	}
 `;
 
@@ -85,6 +98,7 @@ const StyledDescription = styled.p`
 		text-align: left;
 		font-size: ${FONTS.fontSizeXL};
 		padding-inline: 0;
+		margin-top: 24px;
 	}
 `;
 
@@ -92,30 +106,41 @@ const StyledContainerButton = styled.div`
 	display: flex;
 	justify-content: center;
 	gap: 16px;
+	margin-top: 50px;
 
 	@media screen and (width>=1024px) {
 		gap: 40px;
+		display: flex;
+		justify-content: start;
+		margin: 0;
+		margin-top: 237px;
 	}
 `;
 
 const StyledButton = styled.div`
-	/* background-color: ${COLORS.white}; */
 	background-color: ${props =>
 		props.$isActive ? 'white' : 'rgb(255,255,255, 0.3)'};
 	border-radius: 0%;
 	height: 10px;
 	width: 10px;
-	margin-top: 50px;
-	border-radius: 100%;
-`;
 
-const StyledDivImg = styled.div`
-	/* position: relative; */
+	border-radius: 100%;
 `;
 
 const StyledImg = styled.img`
 	padding: 37px 51px 29px;
 	mask-image: linear-gradient(black 50%, transparent);
+
+	@media screen and (width>=768px) {
+		padding: 32px 160px 0;
+	}
+
+	@media screen and (width>=1024px) {
+		padding: 0;
+		min-height: 676px;
+		width: 100%;
+		height: auto;
+	}
 `;
 
 export {
@@ -127,5 +152,5 @@ export {
 	StyledContainerButton,
 	StyledButton,
 	StyledImg,
-	StyledDivImg
+	StyledCrewContainer
 };

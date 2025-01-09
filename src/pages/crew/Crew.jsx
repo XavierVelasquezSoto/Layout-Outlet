@@ -4,12 +4,12 @@ import {
 	StyledButton,
 	StyledContainerButton,
 	StyledDescription,
-	StyledDivImg,
 	StyledImg,
 	StyledIntroTitle,
 	StyledTitle,
 	StyledTitleJob,
-	StyledTitleName
+	StyledTitleName,
+	StyledCrewContainer
 } from './crew.styles';
 
 const Crew = () => {
@@ -21,7 +21,7 @@ const Crew = () => {
 				<StyledTitle>02</StyledTitle>
 				{webContent.introduction}
 			</StyledIntroTitle>
-			<div>
+			<StyledCrewContainer>
 				<div>
 					<StyledTitleJob>{webContent.title[active]}</StyledTitleJob>
 					<StyledTitleName>{webContent.name[active]}</StyledTitleName>
@@ -45,24 +45,24 @@ const Crew = () => {
 						/>
 					</StyledContainerButton>
 				</div>
-				<StyledDivImg>
+				<div>
 					<picture>
 						<source
-							media='(min-width:360px )'
-							srcSet={webContent.images.mobile[active]}
+							media='(min-width: 1024px)'
+							srcSet={webContent.images.desktop[active]}
 						/>
 						<source
 							media='(min-width:768px )'
 							srcSet={webContent.images.tablet[active]}
 						/>
 						<source
-							media='(min-width: 1024px)'
-							srcSet={webContent.images.desktop[active]}
+							media='(min-width:360px )'
+							srcSet={webContent.images.mobile[active]}
 						/>
 						<StyledImg src={webContent.images.mobile[active]} />
 					</picture>
-				</StyledDivImg>
-			</div>
+				</div>
+			</StyledCrewContainer>
 		</>
 	);
 };
