@@ -3,27 +3,30 @@ import styled from 'styled-components';
 const StyledHeader = styled.header`
 	position: relative;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	overflow-x: clip;
+	padding-inline: 24px;
+	padding-top: 24px;
 
 	@media screen and (width>=768px) {
+		padding-top: 0;
+		padding-inline: 40px;
+		gap: 40px;
 		height: 96px;
 	}
-	/* 	
-	@media screen and (width>=1440px) {
-		overflow: hidden;
-	} */
+
+	@media screen and (width>=1024px) {
+		padding-top: 40px;
+		padding-inline: 64px 0;
+		gap: 704px;
+	}
 `;
 
 const StyledLogo = styled.img`
-	height: 40px;
-	margin: 24px 0 0 24px;
+	width: 40px;
 	@media screen and (width >= 768px) {
-		margin: 24px 0 0 40px;
-	}
-
-	@media screen and (width >= 1440px) {
-		margin-top: 64px;
+		width: 48px;
 	}
 `;
 

@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 import { COLORS } from '../../constant/colors';
 import { FONTS } from '../../constant/fonts';
-import { NavLink } from 'react-router-dom';
 
 const StyledContainer = styled.div`
-	/* height: 100vh; */
 	min-height: 100vh;
 
 	@media screen and (width >= 1440px) {
@@ -46,7 +44,6 @@ const StyledImgActive = styled.img`
 	}
 
 	@media screen and (width >= 1440px) {
-		/* padding: 151px 29px 175px 194px; */
 		padding: 0;
 		width: 480px;
 	}
@@ -59,12 +56,14 @@ const StyledDivButton = styled.ul`
 	@media screen and (width >= 768px) {
 		margin: 0 264px;
 	}
+	@media screen and (width >= 1440px) {
+		margin: 0;
+		padding-inline: 0 232px;
+		gap: 32px;
+	}
 `;
 
 const StyledDivContainerInfo = styled.div`
-	/* @media screen and (width>=1440px) {
-		padding: 277px 212px 181px 47px;
-	} */
 	@media screen and (width>=1440px) {
 		width: 50%;
 	}
@@ -82,7 +81,7 @@ const StyledButton = styled.li`
 		bottom: -15px;
 		content: '';
 		position: absolute;
-		width: 32px;
+		width: 100%;
 		border-bottom: 3px solid ${props => (props.$active ? COLORS.white : 'none')};
 		padding-bottom: 35px;
 	}
@@ -103,6 +102,12 @@ const StyledTitle = styled.h1`
 	@media screen and (width >= 768px) {
 		font-size: ${FONTS.fontSize5XL};
 		margin-top: 37px;
+	}
+
+	@media screen and (width >= 1440px) {
+		font-size: ${FONTS.fontSize8XL};
+		margin-top: 53px;
+		text-align: left;
 	}
 `;
 
@@ -141,6 +146,18 @@ const StyledText = styled.p`
 
 	@media screen and (width >= 1440px) {
 		padding: 0;
+		font-size: ${FONTS.fontSizeXL};
+		text-align: left;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 80%;
+			height: 2px;
+			border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+			bottom: -24px;
+			left: 0;
+		}
 	}
 `;
 
@@ -163,12 +180,15 @@ const StyledDivRow = styled.div`
 		display: flex;
 		flex-direction: row;
 		padding: 0;
-		justify-content: space-evenly;
+		justify-content: start;
 	}
 `;
 
 const StyledDivDistance = styled.div`
 	height: 61px;
+	@media screen and (width >= 1440px) {
+		padding-inline: 0 100px;
+	}
 `;
 
 const StyledDistante = styled.p`

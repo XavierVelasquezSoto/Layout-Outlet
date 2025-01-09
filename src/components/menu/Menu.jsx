@@ -1,12 +1,11 @@
 import { useState } from 'react';
+import { MENU_INFO } from '../../constant/menu-info';
 import {
 	StyledIcon,
-	StyledLi,
 	StyledLink,
 	StyledSpanLink,
 	StyledUl
 } from './menu.styles';
-import { MENU_INFO } from '../../constant/menu-info';
 
 const Menu = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -33,14 +32,14 @@ const Menu = () => {
 				<StyledUl $showMenu={isOpen}>
 					{MENU_INFO.map(infoLink => {
 						return (
-							<StyledLi key={infoLink.id}>
+							<li key={infoLink.id}>
 								<StyledLink to={infoLink.link} $number={infoLink.numberLink}>
 									<StyledSpanLink $number={infoLink.numberLink}>
 										{infoLink.numberLink}
 									</StyledSpanLink>
 									{infoLink.menuLink}
 								</StyledLink>
-							</StyledLi>
+							</li>
 						);
 					})}
 				</StyledUl>

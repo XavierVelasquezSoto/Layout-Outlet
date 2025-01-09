@@ -1,28 +1,67 @@
 import { useState } from 'react';
 import { SPACE_INFO } from '../../constant/web-content';
+import {
+	StyledButton,
+	StyledContainerButton,
+	StyledDescription,
+	StyledDivImg,
+	StyledImg,
+	StyledIntroTitle,
+	StyledTitle,
+	StyledTitleJob,
+	StyledTitleName
+} from './crew.styles';
 
 const Crew = () => {
 	const [active, setActive] = useState(0);
-	const webcContent = SPACE_INFO.crew;
+	const webContent = SPACE_INFO.crew;
 	return (
 		<>
-			<p>
-				<span>02</span>
-				{webcContent.introduction}
-			</p>
+			<StyledIntroTitle>
+				<StyledTitle>02</StyledTitle>
+				{webContent.introduction}
+			</StyledIntroTitle>
 			<div>
 				<div>
-					<h2>{webcContent.title[active]}</h2>
-					<h1>{webcContent.name[active]}</h1>
-					<p>{webcContent.info[active]}</p>
-					<span onClick={() => setActive(0)}>point1 </span>
-					<span onClick={() => setActive(1)}>point2 </span>
-					<span onClick={() => setActive(2)}>point3 </span>
-					<span onClick={() => setActive(3)}>point4 </span>
+					<StyledTitleJob>{webContent.title[active]}</StyledTitleJob>
+					<StyledTitleName>{webContent.name[active]}</StyledTitleName>
+					<StyledDescription>{webContent.info[active]}</StyledDescription>
+					<StyledContainerButton>
+						<StyledButton
+							$isActive={active === 0}
+							onClick={() => setActive(0)}
+						/>
+						<StyledButton
+							$isActive={active === 1}
+							onClick={() => setActive(1)}
+						/>
+						<StyledButton
+							$isActive={active === 2}
+							onClick={() => setActive(2)}
+						/>
+						<StyledButton
+							$isActive={active === 3}
+							onClick={() => setActive(3)}
+						/>
+					</StyledContainerButton>
 				</div>
-				<div>
-					<img src={webcContent.images.mobile[active]} alt='error img' />
-				</div>
+				<StyledDivImg>
+					<picture>
+						<source
+							media='(min-width:360px )'
+							srcSet={webContent.images.mobile[active]}
+						/>
+						<source
+							media='(min-width:768px )'
+							srcSet={webContent.images.tablet[active]}
+						/>
+						<source
+							media='(min-width: 1024px)'
+							srcSet={webContent.images.desktop[active]}
+						/>
+						<StyledImg src={webContent.images.mobile[active]} />
+					</picture>
+				</StyledDivImg>
 			</div>
 		</>
 	);

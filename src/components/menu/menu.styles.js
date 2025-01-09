@@ -1,30 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { FONTS } from '../../constant/fonts';
 import { COLORS } from '../../constant/colors';
-
-const StyledLink = styled(NavLink)`
-	display: flex;
-	margin-right: ${props => (props.$space ? '12px' : '0')};
-	font-weight: ${FONTS.fontWeightRegular};
-	font-size: ${FONTS.fontSizeL};
-	letter-spacing: 2px;
-
-	@media screen and (width >= 768px) {
-		margin-right: ${props => (props.$number === '03' ? 'none' : '48px')};
-
-		&.active {
-			border-bottom: 4px solid ${COLORS.white};
-			/* padding-bottom: 35px; */
-		}
-	}
-`;
+import { FONTS } from '../../constant/fonts';
 
 const StyledIcon = styled.img`
-	height: 21px;
 	position: absolute;
-	right: 0;
-	margin: 32px 24px 0 0;
+	right: 24px;
+	top: 33px;
+	height: 21px;
 	z-index: 20;
 
 	@media screen and (width >= 768px) {
@@ -38,6 +21,7 @@ const StyledUl = styled.ul`
 		props.$showMenu ? 'rgb(11, 13, 23, 0.15)' : 'transparent'};
 	backdrop-filter: ${props => (props.$showMenu ? 'blur(10px)' : 'transparent')};
 	flex-direction: column;
+	gap: 32px;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -50,50 +34,49 @@ const StyledUl = styled.ul`
 	@media screen and (width >= 768px) {
 		display: flex;
 		flex-direction: row;
-		padding: 0;
-		margin: 0;
-		left: 128px;
-		top: 0;
+		align-items: center;
+		position: static;
+		padding-top: 0;
+		padding-inline: 117px 40px;
 		background-color: #292b37;
 		backdrop-filter: blur(10px);
-		padding-left: 117px;
-		/* padding-top: 38px; */
-		align-items: center;
 		min-width: 640px;
 		width: 100vw;
 		height: 96px;
 	}
 
-	@media screen and (width >= 1440px) {
-		padding: 0;
-		margin: 0;
-		left: 704px;
-		margin-top: 40px;
-		padding-left: 156px;
-		padding-top: 38px;
-		/* background-color: rgb(11, 13, 23, 0.15);
-		backdrop-filter: blur(10px); */
+	@media screen and (width >= 1024px) {
+		width: 664px;
 	}
-`;
-
-const StyledLi = styled.li`
-	margin-bottom: 32px;
-	/* display: flex; */
 `;
 
 const StyledSpanLink = styled.span`
 	margin-right: 12px;
 	font-weight: ${FONTS.fontWeightBold};
+	display: flex;
+`;
+
+const StyledLink = styled(NavLink)`
+	position: relative;
+	display: flex;
+	margin-right: ${props => (props.$space ? '12px' : '0')};
+	font-weight: ${FONTS.fontWeightRegular};
+	font-size: ${FONTS.fontSizeL};
+	letter-spacing: 2px;
+
 	@media screen and (width >= 768px) {
-		/* display: ${props => (props.$number === '00' ? 'none' : 'inline')}; */
-		display: inline;
-	}
-	@media screen and (width >= 1440px) {
-		display: flex;
+		&.active::after {
+			content: '';
+			position: absolute;
+			bottom: -38px;
+			width: 100%;
+			height: 4px;
+			background-color: ${COLORS.white};
+		}
 	}
 `;
 
-export { StyledLink, StyledIcon, StyledUl, StyledLi, StyledSpanLink };
+export { StyledIcon, StyledLink, StyledSpanLink, StyledUl };
 
 // Link para navegación sin saber el menu activo
 //NavLink para navegación sabiendo el menu activo

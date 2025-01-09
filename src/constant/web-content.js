@@ -51,15 +51,15 @@ const CREW = {
 	introduction: 'MEET YOUR CREW',
 	title: {
 		0: 'COMMANDER',
-		1: 'Mission Specialist ',
+		1: 'MISSION SPECIALIST ',
 		2: 'PILOT',
-		3: 'Flight Engineer'
+		3: 'FLIGHT ENGINEER'
 	},
 	name: {
-		0: 'Douglas Hurley',
+		0: 'DOUGLAS HURLEY',
 		1: 'MARK SHUTTLEWORTH',
-		2: 'Victor Glover',
-		3: 'Anousheh Ansari '
+		2: 'VICTOR GLOVER',
+		3: 'ANOUSHEH ANSARI '
 	},
 	info: {
 		0: 'Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.',

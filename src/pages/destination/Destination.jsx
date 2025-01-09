@@ -32,15 +32,15 @@ const Destination = () => {
 				<picture>
 					<source
 						media='(min-width:360px )'
-						srcset={webContent.images.mobile[active]}
+						srcSet={webContent.images.mobile[active]}
 					/>
 					<source
 						media='(min-width:768px )'
-						srcset={webContent.images.tablet[active]}
+						srcSet={webContent.images.tablet[active]}
 					/>
 					<source
 						media='(min-width: 1024px)'
-						srcset={webContent.images.desktop[active]}
+						srcSet={webContent.images.desktop[active]}
 					/>
 					<StyledImgActive
 						src={webContent.images.mobile[active]}
