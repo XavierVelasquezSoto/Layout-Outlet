@@ -9,9 +9,6 @@ const StyledLink = styled(NavLink)`
 	font-weight: ${FONTS.fontWeightRegular};
 	font-size: ${FONTS.fontSizeL};
 	letter-spacing: 2px;
-	/* &::before {
-		content: '00';
-	} */
 
 	@media screen and (width >= 768px) {
 		margin-right: ${props => (props.$number === '03' ? 'none' : '48px')};

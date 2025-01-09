@@ -1,11 +1,21 @@
 import { useState } from 'react';
 import { SPACE_INFO } from '../../constant/web-content';
 import {
+	StyledButton,
 	StyledContainer,
-	StyledContainerDescription,
+	StyledDistante,
+	StyledDistanteNumber,
+	StyledDivButton,
+	StyledDivDistance,
+	StyledDivRow,
+	StyledDivTravel,
 	StyledImgActive,
+	StyledText,
+	StyledTitle,
 	StyledTitleIntro,
-	StyledTitleIntroNumber
+	StyledTitleIntroNumber,
+	StyledTravel,
+	StyledTravelDuration
 } from './destination.styles';
 
 const Destination = () => {
@@ -18,21 +28,36 @@ const Destination = () => {
 				{webContent.introduction}
 			</StyledTitleIntro>
 			<StyledImgActive src={webContent.images.mobile[active]}></StyledImgActive>
-
-			<button onClick={() => setActive(0)}>{webContent.title[0]}</button>
-			<button onClick={() => setActive(1)}>{webContent.title[1]}</button>
-			<button onClick={() => setActive(2)}>{webContent.title[2]}</button>
-			<button onClick={() => setActive(3)}>{webContent.title[3]}</button>
-			<h1>{webContent.title[active]}</h1>
-			<p>{webContent.info[active]}</p>
-			<div>
-				<p>{webContent.distance}</p>
-				<p>{webContent.distanceNumber[active]}</p>
-			</div>
-			<div>
-				<p>{webContent.travelTime}</p>
-				<p>{webContent.travelDuration[active]}</p>
-			</div>
+			<StyledDivButton>
+				<StyledButton $active={active === 0} onClick={() => setActive(0)}>
+					{webContent.title[0]}
+				</StyledButton>
+				<StyledButton $active={active === 1} onClick={() => setActive(1)}>
+					{webContent.title[1]}
+				</StyledButton>
+				<StyledButton $active={active === 2} onClick={() => setActive(2)}>
+					{webContent.title[2]}
+				</StyledButton>
+				<StyledButton $active={active === 3} onClick={() => setActive(3)}>
+					{webContent.title[3]}
+				</StyledButton>
+			</StyledDivButton>
+			<StyledTitle>{webContent.title[active]}</StyledTitle>
+			<StyledText>{webContent.info[active]}</StyledText>
+			<StyledDivRow>
+				<StyledDivDistance>
+					<StyledDistante>{webContent.distance}</StyledDistante>
+					<StyledDistanteNumber>
+						{webContent.distanceNumber[active]}
+					</StyledDistanteNumber>
+				</StyledDivDistance>
+				<StyledDivTravel>
+					<StyledTravel>{webContent.travelTime}</StyledTravel>
+					<StyledTravelDuration>
+						{webContent.travelDuration[active]}
+					</StyledTravelDuration>
+				</StyledDivTravel>
+			</StyledDivRow>
 		</StyledContainer>
 	);
 };
