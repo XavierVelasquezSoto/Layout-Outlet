@@ -25,6 +25,7 @@ const StyledHeader = styled.header`
 `;
 
 const StyledLogo = styled.img`
+	min-width: 40px;
 	width: 40px;
 	@media screen and (width >= 768px) {
 		width: 48px;

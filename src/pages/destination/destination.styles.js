@@ -5,7 +5,7 @@ import { FONTS } from '../../constant/fonts';
 const StyledContainer = styled.div`
 	/* min-height: 100vh; */
 
-	@media screen and (width >= 1440px) {
+	@media screen and (width >= 1024px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
