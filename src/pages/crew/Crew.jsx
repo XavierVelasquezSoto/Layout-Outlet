@@ -45,23 +45,22 @@ const Crew = () => {
 						/>
 					</StyledContainerButton>
 				</div>
-				<div>
-					<picture>
-						<source
-							media='(min-width: 1024px)'
-							srcSet={webContent.images.desktop[active]}
-						/>
-						<source
-							media='(min-width:768px )'
-							srcSet={webContent.images.tablet[active]}
-						/>
-						<source
-							media='(min-width:360px )'
-							srcSet={webContent.images.mobile[active]}
-						/>
-						<StyledImg src={webContent.images.mobile[active]} />
-					</picture>
-				</div>
+
+				<picture>
+					<source
+						media='(min-width: 1024px)'
+						srcSet={webContent.images.desktop[active]}
+					/>
+					<source
+						media='(min-width:768px )'
+						srcSet={webContent.images.tablet[active]}
+					/>
+					<source
+						media='(min-width:360px )'
+						srcSet={webContent.images.mobile[active]}
+					/>
+					<StyledImg src={webContent.images.mobile[active]} />
+				</picture>
 			</StyledCrewContainer>
 		</>
 	);

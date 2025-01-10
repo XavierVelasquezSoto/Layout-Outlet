@@ -39,7 +39,6 @@ const StyledCrewContainer = styled.div`
 		gap: 32px;
 	}
 `;
-// const StyledCrew = styled.div``
 
 const StyledTitleJob = styled.h2`
 	margin: 0;
@@ -99,6 +98,7 @@ const StyledDescription = styled.p`
 		font-size: ${FONTS.fontSizeXL};
 		padding-inline: 0;
 		margin-top: 24px;
+		width: 539px;
 	}
 `;
 

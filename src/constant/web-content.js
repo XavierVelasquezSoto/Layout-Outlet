@@ -107,13 +107,19 @@ const TECHNOLOGY = {
 	},
 	images: {
 		mobile: {
-			2: '/assets/destination/image-moon.png'
+			0: '/assets/technology/image-launch-vehicle-portrait.jpg',
+			1: '/assets/technology/image-spaceport-portrait.jpg',
+			2: '/assets/technology/image-space-capsule-portrait.jpg'
 		},
 		tablet: {
-			2: '/assets/destination/image-moon.png'
+			0: '/assets/technology/image-launch-vehicle-portrait.jpg',
+			1: '/assets/technology/image-spaceport-portrait.jpg',
+			2: '/assets/technology/image-space-capsule-portrait.jpg'
 		},
 		desktop: {
-			2: '/assets/destination/image-moon.webp'
+			0: '/assets/technology/image-launch-vehicle-landscape.jpg',
+			1: '/assets/technology/image-spaceport-landscape.jpg',
+			2: '/assets/technology/image-space-capsule-landscape.jpg'
 		}
 	}
 };

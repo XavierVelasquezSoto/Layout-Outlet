@@ -3,7 +3,7 @@ import { COLORS } from '../../constant/colors';
 import { FONTS } from '../../constant/fonts';
 
 const StyledContainer = styled.div`
-	min-height: 100vh;
+	/* min-height: 100vh; */
 
 	@media screen and (width >= 1440px) {
 		display: flex;
@@ -11,6 +11,7 @@ const StyledContainer = styled.div`
 		justify-content: space-between;
 		align-items: center;
 		padding-inline: 165px;
+		padding-top: 151px;
 		gap: 108px;
 	}
 `;
