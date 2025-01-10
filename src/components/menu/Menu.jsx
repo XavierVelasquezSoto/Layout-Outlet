@@ -33,7 +33,11 @@ const Menu = () => {
 					{MENU_INFO.map(infoLink => {
 						return (
 							<li key={infoLink.id}>
-								<StyledLink to={infoLink.link} $number={infoLink.numberLink}>
+								<StyledLink
+									to={infoLink.link}
+									$number={infoLink.numberLink}
+									onClick={() => setIsOpen(!isOpen)}
+								>
 									<StyledSpanLink $number={infoLink.numberLink}>
 										{infoLink.numberLink}
 									</StyledSpanLink>

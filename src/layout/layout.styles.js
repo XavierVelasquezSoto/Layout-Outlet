@@ -11,7 +11,7 @@ const StyledBackgroundImg = styled.div`
 		min-height: 100vh;
 	}
 
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		background-image: url(${props => props.$webImg.desktop});
 	}
 `;

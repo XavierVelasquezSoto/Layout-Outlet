@@ -27,7 +27,7 @@ const StyledTitle = styled.span`
 	opacity: 0.5;
 `;
 const StyledCrewContainer = styled.div`
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		min-height: 100vh;
 		display: flex;
 		flex-direction: row;

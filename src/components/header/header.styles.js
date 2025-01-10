@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
@@ -30,4 +31,6 @@ const StyledLogo = styled.img`
 	}
 `;
 
-export { StyledHeader, StyledLogo };
+const StyledLogoLink = styled(NavLink)``;
+
+export { StyledHeader, StyledLogo, StyledLogoLink };

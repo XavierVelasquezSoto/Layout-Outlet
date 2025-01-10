@@ -1,3 +1,4 @@
+import { MENU_INFO } from '../../constant/menu-info';
 import {
 	StyledInfo,
 	StyledInfoText,
@@ -8,6 +9,8 @@ import {
 } from './home.styles';
 
 const Home = () => {
+	const webReference = MENU_INFO;
+
 	return (
 		<StyledRowDesktop>
 			<StyledInfoText>

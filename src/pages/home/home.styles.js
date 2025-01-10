@@ -15,7 +15,7 @@ const StyledTitle = styled.h2`
 		letter-spacing: ${FONTS.letterSpacingM};
 	}
 
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		margin: 0;
 		text-align: left;
 	}
@@ -33,7 +33,7 @@ const StyledSubtitle = styled.h1`
 		font-size: ${FONTS.fontSize6XL};
 	}
 
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		margin: 0;
 		text-align: left;
 	}
@@ -53,7 +53,7 @@ const StyledInfo = styled.p`
 		line-height: 180%;
 	}
 
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		margin: 0;
 		padding: 0;
 		margin-top: 24px;
@@ -61,6 +61,7 @@ const StyledInfo = styled.p`
 		font-size: ${FONTS.fontSizeXL};
 	}
 `;
+
 const StyledLink = styled.button`
 	margin: 0;
 	margin-top: 119px;
@@ -84,7 +85,7 @@ const StyledLink = styled.button`
 		width: 272px;
 	}
 
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		margin: 0;
 		padding: 0;
 		height: 272px;
@@ -92,7 +93,7 @@ const StyledLink = styled.button`
 `;
 
 const StyledRowDesktop = styled.div`
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -102,7 +103,7 @@ const StyledRowDesktop = styled.div`
 `;
 
 const StyledInfoText = styled.div`
-	@media screen and (width>= 1440px) {
+	@media screen and (width>= 1024px) {
 		padding-right: 298px;
 	}
 `;

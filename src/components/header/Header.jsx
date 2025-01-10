@@ -1,10 +1,12 @@
 import Menu from '../menu/Menu';
-import { StyledHeader, StyledLogo } from './header.styles';
+import { StyledHeader, StyledLogo, StyledLogoLink } from './header.styles';
 
 const Header = () => {
 	return (
 		<StyledHeader>
-			<StyledLogo src='/assets/shared/logo.svg' />
+			<StyledLogoLink to='/'>
+				<StyledLogo src='/assets/shared/logo.svg' />
+			</StyledLogoLink>
 			<Menu />
 		</StyledHeader>
 	);

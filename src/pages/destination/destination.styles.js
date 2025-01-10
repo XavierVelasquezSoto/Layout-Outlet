@@ -44,7 +44,7 @@ const StyledImgActive = styled.img`
 		padding: 66px 234px 74px;
 	}
 
-	@media screen and (width >= 1440px) {
+	@media screen and (width>= 1024px) {
 		padding: 0;
 		width: 480px;
 	}
@@ -57,7 +57,7 @@ const StyledDivButton = styled.ul`
 	@media screen and (width >= 768px) {
 		margin: 0 264px;
 	}
-	@media screen and (width >= 1440px) {
+	@media screen and (width>= 1024px) {
 		margin: 0;
 		padding-inline: 0 232px;
 		gap: 32px;
@@ -65,7 +65,7 @@ const StyledDivButton = styled.ul`
 `;
 
 const StyledDivContainerInfo = styled.div`
-	@media screen and (width>=1440px) {
+	@media screen and (width>= 1024px) {
 		width: 50%;
 	}
 `;
@@ -87,7 +87,7 @@ const StyledButton = styled.li`
 		padding-bottom: 35px;
 	}
 
-	@media screen and (width >= 1440px) {
+	@media screen and (width>= 1024px) {
 		margin: 0;
 	}
 `;
@@ -105,7 +105,7 @@ const StyledTitle = styled.h1`
 		margin-top: 37px;
 	}
 
-	@media screen and (width >= 1440px) {
+	@media screen and (width>= 1024px) {
 		font-size: ${FONTS.fontSize8XL};
 		margin-top: 53px;
 		text-align: left;
@@ -145,7 +145,7 @@ const StyledText = styled.p`
 		}
 	}
 
-	@media screen and (width >= 1440px) {
+	@media screen and (width>= 1024px) {
 		padding: 0;
 		font-size: ${FONTS.fontSizeXL};
 		text-align: left;
@@ -177,7 +177,7 @@ const StyledDivRow = styled.div`
 		justify-content: space-evenly;
 	}
 
-	@media screen and (width >= 1440px) {
+	@media screen and (width>= 1024px) {
 		display: flex;
 		flex-direction: row;
 		padding: 0;
@@ -187,7 +187,7 @@ const StyledDivRow = styled.div`
 
 const StyledDivDistance = styled.div`
 	height: 61px;
-	@media screen and (width >= 1440px) {
+	@media screen and (width>= 1024px) {
 		padding-inline: 0 100px;
 	}
 `;

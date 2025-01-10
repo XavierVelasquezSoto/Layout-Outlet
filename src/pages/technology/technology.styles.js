@@ -49,6 +49,7 @@ const StyledImg = styled.img`
 	@media screen and (width>= 1024px) {
 		margin-top: 0;
 		padding: 0;
+		/* min-width: 608px; */
 		width: 608px;
 		height: 600px;
 	}
